@@ -3,7 +3,8 @@ node {
    		echo 'Hello World 1'
    stage 'Stage 2'
    		echo 'Hello World 2'
-   if (env.BRANCH_NAME == 'master') {
-      build '../jenkins_pipeline_new/master'
-   }
+         sh 'ls'
+         if (env.BRANCH_NAME == 'master') {
+            build '../jenkins_pipeline_new/master'
+         }
 }
